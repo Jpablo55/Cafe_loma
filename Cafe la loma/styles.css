@@ -1,0 +1,34 @@
+body{
+    margin:0;
+    background-color: rgb(29, 29, 29);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    background-image: url(Assets/coffee.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 8vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    height: 5vh;
+    background-color: rgb(73, 49, 49);
+    color:white;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.font-family{
+    font-family: "Edu VIC WA NT Hand", cursive;
+}
+.hero-image{
+    width: 100vw;
+}
