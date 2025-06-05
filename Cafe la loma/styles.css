@@ -1,10 +1,17 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin:0;
-    background-color: rgb(29, 29, 29);
+    background-color: rgb(199, 199, 199);
 }
 a{
     text-decoration: none;
     color: white;
+}
+a:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
 }
 header{
     background-image: url(Assets/coffee.png);
@@ -19,16 +26,84 @@ header{
 nav{
     display: flex;
     height: 5vh;
-    background-color: rgb(73, 49, 49);
+    background-color: rgb(160, 142, 142);
     color:white;
     justify-content: space-around;
     align-items: center;
     font-size: 18px;
     font-weight: bold;
 }
+
+/* Modo oscuro */
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-left: 20px;
+  }
+  
+  .theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  body:has(#toggle-theme:checked){
+    background-color: rgb(29, 29, 29);
+    color: #e0e0e0;
+  }
+  body:has(#toggle-theme:checked) nav{
+    background-color: rgb(73, 49, 49);
+
+  }
+  /* Fin modo oscuro */
+
 .font-family{
     font-family: "Edu VIC WA NT Hand", cursive;
 }
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+   
+}
 .hero-image{
-    width: 100vw;
+    width: 60vw;
+    height: 90vh;
+    border-radius: 5%;
+    background-image: url(Assets/Cappppppppp.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+
 }
