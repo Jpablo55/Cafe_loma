@@ -93,6 +93,11 @@ nav{
     color: white;
 
   }
+
+  body:has(#toggle-theme:checked) .container-location{
+    background-color: rgb(32, 27, 27);
+    color: white;
+  }
   /* Fin modo oscuro */
 #home,
 #menu,
@@ -142,4 +147,38 @@ main{
     height: 50%;
     border-radius: 15%;
 
+}
+.card:hover{
+    transform: scale(1.05);
+    transition: transform 0.5s ease-in-out;
+}
+.container-location{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5vh;
+    color: black;
+    background-color:rgb(190, 177, 177) ;
+    justify-content: center;
+    & h2{
+        font-size: 40px;
+        
+    }
+    & iframe{
+        border-radius: 2%;
+        margin: 9vh 0;
+    }
+    & ul li{
+        font-size: 20px;
+        text-align: start;
+    }
+}
+.fecha-hora{
+    text-align: center;
+}
+#location{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
 }
