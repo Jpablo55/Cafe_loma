@@ -116,13 +116,30 @@ main{
    
 }
 .hero-image{
-    width: 60vw;
+    width: 52vw;
     height: 90vh;
     border-radius: 5%;
     background-image: url(Assets/Cappppppppp.png);
     background-repeat: no-repeat;
     background-size: 100% 100% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+.slogan-container{
+    width:100%;
+    height: 100%;
+    border-radius: 3%;
+    display: flex;
+    justify-content: center;
+}
+.slogan-container p{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 12fvh;
 }
 .product-cards{
     display: flex;
@@ -181,4 +198,15 @@ main{
     justify-content: space-around;
     align-items: center;
     display: flex;
+}
+#reservation-form{
+    background-color: black;
+    height: 45vh;
+}
+
+
+
+footer{
+    height: 10vh;
+    background-color: burlywood;
 }
